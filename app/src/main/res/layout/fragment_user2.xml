@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="My Dictionary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_1"/>
+
+    <Button
+        android:id="@+id/fragment_user2_btn_addword"
+        android:text="add new word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/fragment_user2_btn_quest"
+        android:text="do quest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/fragment_user2_btn_addword"/>
+
+    <Button
+        android:text="option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user2_btn_quest"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

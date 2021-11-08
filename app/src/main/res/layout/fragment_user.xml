@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/user_addword_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_border"
+        android:text="Add New Word"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_toolbar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="455dp" />
+
+    <Button
+        android:id="@+id/user_leiner_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_border"
+        android:text="Leitner System Quest"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_addword_btn" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/user_changeQ_btn"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_border"
+        android:text="Change Quest"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_complete_btn" />
+
+    <Button
+        android:id="@+id/user_complete_btn"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="4dp"
+        android:text="Complete Today Quest"
+        android:background="@drawable/custom_border"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_leiner_btn" />
+
+    <Button
+        android:id="@+id/user_setting_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:text="Setting"
+        android:background="@drawable/custom_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_changeQ_btn" />
+
+    <Button
+        android:id="@+id/user_colorset_btn"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_border"
+        android:visibility="gone"
+        android:text="Set to another color pack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_setting_btn" />
+
+    <Button
+        android:id="@+id/user_nextday_btn"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_border"
+        android:visibility="gone"
+        android:text="Next the day (Current: Day 1)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_colorset_btn" />
+
+    <Button
+        android:id="@+id/user_boxclear_btn"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_border"
+        android:text="Clear Box Data"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_nextday_btn" />
+    <Button
+        android:id="@+id/user_setquest_btn"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="82dp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_border"
+        android:text="Set Box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_boxclear_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

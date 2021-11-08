@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.WordMarkActivity">
+
+    <Toolbar
+        android:id="@+id/word_mark_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_1"/>
+
+    <TextView
+        android:id="@+id/word_mark_key"
+        android:text="Key"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_mark_toolbar"/>
+
+    <TextView
+        android:id="@+id/word_mark_text_tag"
+        android:text="Tag: "
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_mark_key"/>
+
+    <EditText
+        android:id="@+id/word_mark_edit_tag"
+        android:layout_below="@+id/word_mark_key"
+        android:layout_toRightOf="@+id/word_mark_text_tag"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/word_mark_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_mark_edit_tag"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Choose from existing Tag: "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <Spinner
+            android:id="@+id/word_mark_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/word_mard_button_confirm"
+        android:text="confirm"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_mark_linearlayout"/>
+</RelativeLayout>

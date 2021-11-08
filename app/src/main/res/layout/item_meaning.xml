@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_background_1">
+
+    <TextView
+        android:id="@+id/meaning_type"
+        android:text="Type"
+        android:textColor="@color/color_text_2"
+        android:textSize="@dimen/size_text_1"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_1"/>
+
+    <TextView
+        android:id="@+id/meaning_meanings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meaning"
+        android:textColor="@color/color_text_3"
+        android:textSize="@dimen/size_text_1"
+        android:layout_margin="@dimen/margin_1"/>
+
+</LinearLayout>

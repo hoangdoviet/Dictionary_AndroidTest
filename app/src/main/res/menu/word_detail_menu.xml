@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+    <item
+        android:title="Mark this word"
+        android:id="@+id/mark_word_item"
+        android:icon="@drawable/ic_star_border_black_24dp"
+        app:showAsAction="withText"/>
+    <item
+        android:title = "Memorize with space repetition method"
+        android:id="@+id/memorize_word_item"
+        android:icon="@drawable/ic_vocab_black_24dp"
+        app:showAsAction="withText"/>
+    <item
+        android:title = "Add to the Box"
+        android:id="@+id/add_to_quest_item"
+        android:icon="@drawable/ic_vocab_black_24dp"
+        app:showAsAction="withText"/>
+    </group>
+</menu>
